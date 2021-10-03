@@ -1,0 +1,104 @@
+@import "null";
+
+$family:'Inter', sans-serif;
+$color_lite1:#DBE4F1;
+$color_lite2:#F8F8FE;
+$color_white:#FFFFFF;
+$color_button:#0F3D33;
+$color_black:#000000;
+$color_violet:#A665FB;
+$color_green-lite:#50E3C2;
+$color_pink:#FC5C65;
+$color_grey: #8E8E8E;
+
+.wrapper{
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  font-family:$family;
+}
+
+.header{
+  min-height: 145px;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .header__container {
+    margin: 0 auto;
+    padding: 10px;
+    width: 74%;
+  }
+  .header__body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__menu{
+    .menu__list{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .menu__item{
+        margin-left: 40px;
+        a{
+          font-family:$family;
+          font-size: 16px;
+          line-height: 150%;
+          color:$color_lite1;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+.content{
+  width: 100%;
+  min-height: 535px;
+  background:url("../img/fon.png"), linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%) no-repeat;
+  .content__body{
+    margin-left: 30%;
+    padding-top: 184px;
+    width: 38%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    h1{
+      font: normal bold 328%/148% $family;
+      letter-spacing: -0.3px;
+      color: $color_white;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+    .content__text-normal{
+      font: normal normal 20px/34px $family;
+      color: $color_lite1;
+      text-align: center;
+      padding-bottom: 27px;
+    }
+    .content__button{
+      display: inline-block;
+      width: 39%;
+      min-height: 50px;
+      background:$color_green-lite;
+      text-align: center;
+      padding-top: 15px;
+      font: normal normal 115%/19px $family;
+      border-radius: 3px;
+      padding-bottom: 11px;
+      a{
+       color:$color_button;
+      }
+    }
+    .content__text-small{
+      font: normal normal 100%/28px $family;
+      color: $color_lite1;
+      text-align: center;
+    }
+
+  }
+}
